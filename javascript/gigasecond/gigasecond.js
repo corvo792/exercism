@@ -3,6 +3,6 @@
 // convenience to get you started writing code faster.
 //
 
-const gigasecond = (year, month, day, hour, minute) => {
-  return new Date(Date.UTC(year, month, day, hour, minute));
-};
+export const gigasecond = (startDate) => {
+  return new Date(startDate.getTime() + 1000000000000);
+}
